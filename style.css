@@ -1,0 +1,2986 @@
+html{
+
+    scroll-behavior:smooth;
+
+}
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f8f4ef;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#c997a4;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#b98595;
+
+}
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    overflow-x:hidden;
+
+    font-family:"Cormorant Garamond", serif;
+
+    background:#fffdfb;
+    
+
+    width:100%;
+
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    background-image:url("images/background.jfif");
+
+    background-size:cover;
+
+    background-position:center -60px;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:visible;
+
+    
+
+
+    min-height:100vh;
+height:100svh;
+background-size:cover;
+background-position:center;
+}
+
+/* ===========================
+   OVERLAY
+=========================== */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+       background:rgba(48,33,25,.18);
+
+    backdrop-filter:blur(1px);
+
+}
+
+/* ===========================
+   HERO CONTENT
+=========================== */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:10;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    height:100%;
+
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.event-title{
+ font-family:"Amiri", serif;
+    color:white;
+
+    font-size:22px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+     transform: translateY(-30px);
+
+}
+
+/* ===========================
+   COUPLE
+=========================== */
+
+.couple{
+
+    font-family: "Aref Ruqaa", serif;
+    color:white;
+
+    font-size:150px;
+
+    font-weight:300;
+
+    line-height:1.5;
+
+    margin-bottom:25px;
+
+}
+
+.couple span{
+
+    margin:0 15px;
+
+}
+
+/* ===========================
+   MONOGRAM
+=========================== 
+
+.monogram{
+
+    width:240px;
+
+    animation:
+    fadeUp 1s .8s forwards,
+    breathe 5s ease-in-out infinite;
+
+    opacity:0;
+
+}*/
+
+/* ===========================
+   DATE
+=========================== */
+
+.date{
+
+     font-family: "Cinzel", serif;
+    color:white;
+
+    
+
+    margin-bottom:45px;
+    font-size:2rem;
+letter-spacing:6px;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.open-btn{
+
+   
+
+    border:none;
+
+    color:white;
+
+    font-size:22px;
+
+    font-family:"Cormorant Garamond", serif;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    padding:10px 18px;
+    
+    border-radius:50px;
+
+    background:#dba8b4;
+color:#fff;
+
+
+}
+
+.open-btn:hover{
+
+    letter-spacing:5px;
+
+    transform:scale(1.05);
+    
+background:#cf95a4;
+
+}
+
+.open-btn:hover{
+
+    transform:translateY(-4px);
+
+ 
+
+    box-shadow:0 18px 40px rgba(0,0,0,.25);
+
+}
+.open-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:20px;
+
+}
+.line{
+
+    width:90px;
+
+    height:1px;
+
+    background:rgba(255,255,255,.75);
+
+    transition:.4s;
+
+}
+.open-wrapper:hover .line{
+
+    width:120px;
+
+    background:white;
+
+}
+
+/* ===========================
+   FLOWERS
+=========================== */
+
+.flower{
+
+    position:absolute;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.top-left{
+
+    width:350px;
+
+    top:-30px;
+
+    left:-40px;
+
+}
+
+.top-right{
+
+    width:350px;
+
+    top:-30px;
+
+    right:-40px;
+
+}
+
+.left-side{
+
+    width:280px;
+
+    left:-80px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.right-side{
+
+    width:280px;
+
+    right:-80px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.bottom-left{
+
+    width:350px;
+
+    left:-40px;
+
+    bottom:-40px;
+
+   
+
+}
+.bottom-right{
+
+    width:350px;
+
+    bottom:-40px;
+
+    right:-40px;
+
+}
+/* ===========================
+   FLOWERS FLOATING
+=========================== */
+
+.top-left,
+.bottom-right{
+    animation:floatOne 8s ease-in-out infinite;
+}
+
+.top-right,
+.bottom-left{
+    animation:floatTwo 10s ease-in-out infinite;
+}
+
+.left-side,
+.right-side{
+    animation:floatThree 7s ease-in-out infinite;
+}
+
+/* ===========================
+   PETALS
+=========================== */
+
+.petals{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.petals span{
+
+    position:absolute;
+
+    width:28px;
+
+    height:28px;
+
+    background:url("images/petal.png");
+
+    background-size:cover;
+
+    top:-80px;
+
+    animation:fall linear infinite;
+
+}
+/*
+.petals span:nth-child(1){
+
+    left:5%;
+    animation-duration:12s;
+    animation-delay:0s;
+
+}
+
+.petals span:nth-child(2){
+
+    left:20%;
+    animation-duration:15s;
+    animation-delay:2s;
+
+}
+
+.petals span:nth-child(3){
+
+    left:35%;
+    animation-duration:10s;
+    animation-delay:4s;
+
+}
+
+.petals span:nth-child(4){
+
+    left:50%;
+    animation-duration:18s;
+    animation-delay:6s;
+
+}
+
+.petals span:nth-child(5){
+
+    left:65%;
+    animation-duration:13s;
+    animation-delay:8s;
+
+}
+
+.petals span:nth-child(6){
+
+    left:78%;
+    animation-duration:16s;
+    animation-delay:1s;
+
+}
+
+.petals span:nth-child(7){
+
+    left:90%;
+    animation-duration:14s;
+    animation-delay:1.2s;
+
+}
+
+.petals span:nth-child(8){
+
+    left:96%;
+    animation-duration:17s;
+    animation-delay:1.4s;
+
+}*/
+
+/* ===========================
+   INVITATION PAGE
+=========================== */
+
+.invitation{
+
+    position: relative;
+
+   min-height:auto;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    padding: 100px 20px;
+
+     
+flex-direction:column;
+}
+.invitation::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,248,244,.25);
+
+    backdrop-filter:blur(2px);
+
+    z-index:1;
+
+}
+.opening-card{
+
+    position:relative;
+
+    z-index:5;
+
+    width:min(800px,90%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+  justify-content:center;
+      margin:0 auto;
+}
+
+
+.ayah{
+
+    width:85%;
+
+    max-width:700px;
+
+    font-family:"Amiri",serif;
+
+    font-size:34px;
+
+    line-height:2.2;
+
+    color:#6c5548;
+
+    margin-bottom:10px;
+
+}
+
+.opening-monogram{
+
+    width:170px;
+
+    margin-bottom:70px;
+
+    animation: monogramBreath 6s ease-in-out infinite;
+
+}
+.opening-names{
+  font-family: "Amiri", serif;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:8px;
+
+   font-weight: 400;
+
+    font-size:64px;
+
+    color:#6c5548;
+
+    line-height:1.25;
+
+    margin-bottom:40px;
+     margin-top: 50px;
+
+}
+.opening-names span{
+
+    font-size:34px;
+
+    color:#c98f9d;
+
+}
+.divider{
+
+    font-size:28px;
+
+    color:#000000;
+
+}
+
+
+.flower{
+
+    position:absolute;
+
+    z-index:2;
+
+    pointer-events:none;
+
+    animation:floatFlower 7s ease-in-out infinite;
+
+    filter:drop-shadow(0 8px 15px rgba(0,0,0,.08));
+
+}
+@keyframes floatFlower{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+
+/*.description{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#666;
+
+    max-width:650px;
+
+    margin:auto;
+
+    margin-bottom:60px;
+
+}*/
+.bride,
+.groom{
+
+    font-family:"Diwani", serif;
+
+    font-size:80px;
+
+    font-weight:normal;
+
+    color:#8d6e63;
+
+    margin:10px 0;
+
+}
+.heart{
+
+    font-size:34px;
+
+    color:#d4a5ae;
+
+    margin:15px 0;
+
+    animation:heartbeat 2s infinite;
+}
+
+
+.details{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:60px;
+
+}
+
+.detail{
+
+    width:220px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.detail h3{
+
+    margin-bottom:12px;
+
+    font-size:28px;
+
+}
+
+.detail p{
+
+    font-size:20px;
+
+}
+
+.location-btn{
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#8d775f;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.location-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================
+   FLASH
+=========================== */
+
+.flash{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:999;
+
+    transition:.5s;
+
+}
+
+.flash.show{
+
+    opacity:1;
+
+}
+
+/* ===========================
+   KEYFRAMES
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes breathe{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes floatOne{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+@keyframes floatTwo{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+}
+
+@keyframes floatThree{
+
+    0%,100%{
+
+        transform:translateY(-50%);
+
+    }
+
+    50%{
+
+        transform:translateY(calc(-50% - 10px));
+
+    }
+
+}
+
+@keyframes fall{
+
+    0%{
+
+        transform:
+        translateY(-80px)
+        translateX(0px)
+        rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:
+        translateY(30vh)
+        translateX(-20px)
+        rotate(90deg);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(60vh)
+        translateX(25px)
+        rotate(180deg);
+
+    }
+
+    75%{
+
+        transform:
+        translateY(90vh)
+        translateX(-15px)
+        rotate(270deg);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(120vh)
+        translateX(30px)
+        rotate(360deg);
+
+    }
+
+}
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@keyframes fadePage{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.detail{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+.detail.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+@keyframes heartbeat{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+}
+.invite-top-left{
+
+    width:300px;
+
+    top:0;
+
+    left:0;
+
+}
+
+.invite-top-right{
+
+    width:300px;
+
+    top:0;
+
+    right:0;
+
+}
+
+.invite-left{
+
+    width:180px;
+
+    top:50%;
+
+    left:0;
+
+    transform:translateY(-50%);
+
+}
+
+.invite-right{
+
+    width:180px;
+
+    top:50%;
+
+    right:0;
+
+    transform:translateY(-50%);
+
+}
+
+.invite-bottom-left{
+
+    width:320px;
+
+    left:0;
+
+    bottom:0;
+
+}
+
+.invite-bottom-right{
+
+    width:320px;
+
+    right:0;
+
+    bottom:0;
+
+}
+
+
+/* بداية العنصر */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+/* بعد الظهور */
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+.heart{
+
+    display: block;
+
+    font-size: 26px;
+
+    color: #c98f9d;
+
+    margin: 10px 0;
+
+    font-weight: normal;
+
+}
+/*تقويم*/
+/* ==========================
+        CALENDAR
+========================== */
+
+.calendar-section{
+
+    display: none;
+
+    position: relative;
+
+   min-height:auto;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 100px 20px;
+
+    overflow: hidden;
+
+
+    
+}
+
+.calendar-container{
+
+    position:relative;
+
+    z-index:3;
+
+}
+.calendar-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(255,248,244,.25);
+
+    backdrop-filter:blur(2px);
+
+    z-index:1;
+
+}
+
+.calendar-subtitle{
+
+    text-align:center;
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:42px;
+
+    letter-spacing:3px;
+
+    color:#8d6d60;
+
+    margin-bottom:60px;
+
+}
+.calendar-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+.calendar-box{
+
+    width:420px;
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+.month{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+    color:#8b6758;
+
+    font-family:"Cormorant Garamond", serif;
+
+}
+.calendar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:14px;
+
+}
+.calendar-grid span{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:42px;
+
+    height:42px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    color:#6e574b;
+
+}
+.special-day{
+
+    background:#c997a4;
+
+    color:white !important;
+
+    font-weight:600;
+
+    box-shadow:
+
+    0 0 0 8px rgba(201,151,164,.18);
+
+}
+.date-info{
+
+    text-align:center;
+
+}
+.date-info h2{
+
+    font-size:42px;
+
+    color:#8d6f62;
+
+    margin-bottom:10px;
+
+}
+.date-info h1{
+
+    font-size:120px;
+
+    color:#c997a4;
+
+    line-height:1;
+
+    margin:0;
+
+}
+.date-info p{
+
+    font-size:30px;
+
+    color:#6d5549;
+
+    margin-top:20px;
+
+}
+/*.calendar-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+}*/
+@media (max-width:900px){
+
+    .calendar-wrapper{
+
+        flex-direction:column;
+
+    }
+
+}.cal-top-left{
+
+    top:0;
+
+    left:0;
+
+    width:260px;
+
+}
+
+.cal-top-right{
+
+    top:0;
+
+    right:0;
+
+    width:260px;
+
+}
+
+.cal-bottom-left{
+
+    bottom:0;
+
+    left:0;
+
+    width:220px;
+
+}
+
+.cal-bottom-right{
+
+    bottom:0;
+
+    right:0;
+
+    width:220px;
+
+}
+/* ===========================
+   COUNTDOWN
+=========================== */
+
+.countdown-section{
+
+    position:relative;
+
+   min-height:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+   padding:70px 20px;
+
+    overflow:hidden;
+
+
+     display: none;
+
+}
+
+.countdown-container{
+
+    width:min(1100px,90%);
+
+    margin:auto;
+
+    text-align:center;
+
+
+}
+
+.count-title{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:42px;
+
+    color:#8d6d60;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.countdown-container h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:34px;
+
+    font-weight:400;
+
+    color:#6e574b;
+
+    margin-bottom:70px;
+
+}
+
+.countdown-container h2 span{
+
+    color:#c997a4;
+
+    font-style:italic;
+
+}
+
+.count-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    flex-direction:row-reverse;
+
+}
+
+.time-box{
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    width:86px;
+
+    height:96px;
+
+    padding:10px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    flex-shrink:0;
+
+}
+
+.time-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.time-box h1{
+
+
+    color:#c997a4;
+
+    margin:0;
+
+    font-family:"Cormorant Garamond", serif;
+        font-size:1.9rem;
+
+  
+
+}
+
+.time-box p{
+
+    
+
+       font-size:.72rem;
+
+    letter-spacing:1px;
+
+    color:#6b5647;
+
+    font-size:.65rem;
+
+    margin-top:6px;
+
+
+}
+/* ===========================
+   VENUE
+=========================== */
+
+.venue-section{
+
+    display:none;
+
+    position:relative;
+
+   min-height:auto;
+      z-index:3;
+
+
+    justify-content:center;
+
+    align-items:center;
+
+   padding:70px 20px;
+
+    overflow:hidden;
+
+
+}
+
+.venue-container{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity .8s ease, transform .8s ease;
+
+}
+
+.venue-container.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.venue-title{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:42px;
+
+    color:#8d6d60;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.venue-container h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:34px;
+
+    font-weight:400;
+
+    color:#e08eb2;
+
+    margin-bottom:20px;
+
+}
+
+.venue-text{
+
+    max-width:650px;
+
+    margin:0 auto 60px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#7d6b60;
+
+}
+
+.venue-card{
+
+    width:340px;
+
+    margin:auto;
+
+    background:rgba(255, 249, 252, 0.35);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:28px;
+
+    padding:32px 28px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    margin-bottom:45px;
+
+    transition:.35s;
+
+}
+
+.venue-icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.venue-card h3{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:34px;
+
+    font-weight:500;
+
+    color:#6d5549;
+
+    margin-bottom:12px;
+
+}
+
+.venue-card p{
+
+    font-size:18px;
+
+    color:#6d5549;
+
+    letter-spacing:1px;
+
+    margin:0;
+
+}
+
+.venue-btn-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:40px;
+
+}
+
+.venue-line{
+
+    width:70px;
+
+    height:1px;
+
+    background:#c8b2a7;
+
+    transition:.4s;
+
+}
+
+.venue-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:transparent;
+
+    border:1px solid #c997a4;
+
+    color:#8d6d60;
+
+    padding:14px 40px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-family:"Cormorant Garamond", serif;
+
+}
+
+.venue-btn:hover{
+
+    background:#c997a4;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(201,151,164,.35);
+
+}
+
+.venue-btn-wrapper:hover .venue-btn{
+
+     background:#c997a4;   /* الخلفية البينك */
+
+    color:#fff;           /* الكتابة أبيض */
+
+    border: none;
+    box-shadow:0 8px 20px rgba(201,151,164,.35);
+}
+
+.venue-btn-wrapper:hover .venue-line{
+
+    width:95px;
+
+    background:#c997a4;
+
+}
+
+/* RSVP POPUP */
+.rsvp-popup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(40,30,30,.28);
+
+backdrop-filter:blur(8px);
+
+-webkit-backdrop-filter:blur(8px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+.rsvp-popup.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.popup-box{
+
+    width:480px;
+
+    max-width:90%;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.35);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    position:relative;
+
+    transform:translateY(40px) scale(.95);
+
+    transition:.45s ease;
+    
+
+}
+.popup-box h2{
+
+    font-family:"Amiri",serif;
+
+    font-size:42px;
+
+    color:#8b6b61;
+
+    text-align:center;
+
+    margin-bottom:30px;
+    direction:rtl;
+
+    text-align:center;
+
+}
+
+.rsvp-popup.show .popup-box{
+
+    transform:translateY(0);
+
+}
+
+.close-popup{
+
+    position:absolute;
+
+    top:18px;
+
+    right:25px;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+.popup-box input,
+.popup-box textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    margin-top:18px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(190,160,170,.4);
+
+    background:rgba(255,255,255,.55);
+
+    outline:none;
+
+    font-size:16px;
+
+     color:#8b6b61;
+
+    font-family:"Amiri",serif;
+
+
+
+    transition:.3s;
+   
+
+}
+.popup-box input:focus,
+.popup-box textarea:focus{
+
+    border-color:#c992a1;
+
+    box-shadow:0 0 15px rgba(201,146,161,.25);
+
+}
+.popup-box input::placeholder,
+.popup-box textarea::placeholder{
+
+    color:#b89b93;
+
+    font-family:"Amiri",serif;
+
+    font-size:18px;
+
+}
+.close-popup{
+
+    position:absolute;
+
+    top:18px;
+
+    left:22px;
+
+    width:35px;
+
+    height:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    font-size:28px;
+
+    color:#8b6b61;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.close-popup:hover{
+
+    background:#d8a3b2;
+
+    color:white;
+
+    transform:rotate(90deg);
+
+}
+
+
+.popup-box textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+.attendance{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+.attendance-card{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:55px;
+     width:80%;      /* بدل ما يكون عريض */
+    margin:auto;
+
+    border:1px solid #d7bcc1;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.35);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    color:#8b6b61;
+
+    font-size:18px;
+
+}
+
+.attendance-card input{
+
+    display:none;
+
+}
+
+.attendance-card:hover{
+
+    background:#d8a3b2;
+
+    color:white;
+
+    border-color:#d8a3b2;
+
+}
+
+.attendance-card:has(input:checked){
+
+    background:#d8a3b2;
+
+    color:white;
+
+    border-color:#d8a3b2;
+
+}
+/*================ RSVP SECTION =================*/
+
+.rsvp-section{
+
+    position:relative;
+
+    min-height:auto;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:70px 20px;
+
+    overflow:hidden;
+
+
+
+}
+
+.rsvp-container{
+
+    width:min(700px,90%);
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.rsvp-container h2{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:52px;
+
+    font-weight:500;
+
+    color:#8d6d60;
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+
+}
+
+.rsvp-container p{
+
+    max-width:600px;
+
+    margin:auto;
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#6f5448;
+
+    margin-bottom:60px;
+
+}
+
+.rsvp-btn-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:40px;
+
+
+}
+
+.rsvp-btn-wrapper .line{
+
+    width:90px;
+
+    height:1px;
+
+    background:#c997a4;
+
+}
+
+.rsvp-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:transparent;
+
+    border:1px solid #c997a4;
+
+    color:#8d6d60;
+
+    padding:14px 40px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-family:"Cormorant Garamond", serif;
+}
+
+.rsvp-btn:hover{
+
+    background:#c997a4;
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(201,151,164,.35);
+
+}
+.rsvp-container{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.rsvp-container.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.quote-section{
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:auto;
+
+    padding:50px 20px;
+
+    text-align:center;
+     
+
+}
+.quote-container{
+
+    max-width:750px;
+
+}
+
+.quote-text{
+
+    font-family:"Amiri", serif;
+
+    font-size:33px;
+
+    font-weight:400;
+
+    line-height:1;
+
+    color:#8b6b61;
+
+}
+.invitation-text{
+
+    margin:45px 0;
+
+    text-align:center;
+
+}
+
+.invitation-text p{
+
+    margin:10px 0;
+
+    font-family:"Amiri", serif;
+
+    font-size:27px;
+
+    font-weight:400;
+
+    line-height:2;
+
+    color:#8b6b61;
+
+}
+
+.wedding-line{
+
+    margin-top:20px !important;
+
+    font-size:31px !important;
+
+    color:#b88492;
+
+    letter-spacing:2px;
+
+}
+.calendar-subtitle,
+.count-title,
+.rsvp-container h2{
+
+    font-family: "Amiri", serif;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #9a6f78;
+
+    letter-spacing: 1px;
+
+}
+.submit-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.submit-wrapper .line{
+
+    width:70px;
+
+    height:1px;
+
+    background:#d7bcc1;
+
+}
+
+.submit-btn{
+
+    padding:14px 38px;
+
+   
+
+    border-radius:30px;
+
+     background:#c997a4;
+    color:#fff;
+    border:none;
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.submit-btn:hover{
+
+    background:#d8a3b2;
+
+    color:white;
+
+    border-color:#d8a3b2;
+
+}
+.error-message{
+
+    color:#c26b7c;
+
+    font-size:15px;
+
+    margin-top:8px;
+
+    margin-right:10px;
+
+    font-family:"Amiri", serif;
+
+    display:none;
+
+}
+
+.input-error{
+
+    border:1px solid #c26b7c !important;
+
+    box-shadow:0 0 10px rgba(194,107,124,.2);
+
+}
+
+.attendance-error{
+
+    border:1px solid #c26b7c !important;
+
+}
+.success-message{
+
+    display:none;
+
+    text-align:center;
+
+    padding:30px 10px;
+
+    animation:fadeSuccess .6s ease;
+
+}
+
+.success-heart{
+
+    font-size:42px;
+
+    color:#c997a4;
+
+    margin-bottom:15px;
+
+}
+
+.success-message h3{
+
+    font-family:"Amiri", serif;
+
+    font-size:34px;
+
+    color:#8b6b61;
+
+    margin-bottom:15px;
+
+}
+
+.success-message p{
+
+    font-family:"Amiri", serif;
+
+    font-size:22px;
+
+    color:#8b6b61;
+
+    line-height:2;
+
+}
+
+@keyframes fadeSuccess{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ===== Website Background ===== */
+
+/* ===== Section Reveal Animation ===== */
+
+.reveal{
+
+    opacity: 0;
+
+    transform: translateY(70px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+body{
+
+    overflow-x:hidden;
+
+    font-family:"Cormorant Garamond", serif;
+
+    background-color:#FCFAF8;
+
+    background-image:
+        radial-gradient(rgba(216,196,186,.08) 1px, transparent 1px);
+
+    background-size:22px 22px;
+
+}
+.flower{
+
+    position:absolute;
+
+    pointer-events:none;
+
+     opacity:1;
+
+    z-index:1;
+
+    animation: floatFlower 7s ease-in-out infinite;
+
+    transition:transform .4s ease;
+
+     filter:drop-shadow(0 8px 20px rgba(0,0,0,.08));
+
+}
+
+.top-right,
+.right-side,
+.bottom-right{
+
+    animation-duration:8.5s;
+
+    animation-direction:reverse;
+
+}
+
+.top-left,
+.left-side,
+.bottom-left{
+
+    animation-duration:7s;
+
+}
+.top-left{
+
+    top:0;
+
+    left:0;
+
+    width:260px;
+
+}
+
+.top-right{
+
+    top:0;
+
+    right:0;
+
+    width:260px;
+
+}
+.left-side{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    height:100vh;
+
+    width:auto;
+
+    z-index:0;
+
+}
+
+.right-side{
+
+    position:fixed;
+
+    top:0;
+
+    right:0;
+
+    height:100vh;
+
+    width:auto;
+
+    z-index:0;
+
+}
+
+.bottom-left{
+
+    bottom:0;
+
+    left:0;
+
+    width:260px;
+
+}
+
+.bottom-right{
+
+    bottom:0;
+
+    right:0;
+
+    width:260px;
+
+}
+
+
+/* ==========================
+   MOBILE FIXES
+========================== */
+@media (max-width:768px){
+
+/* HERO */
+
+.hero{
+
+    min-height:100svh;
+    height:100svh;
+
+    background-size:cover;
+
+    background-position:52% center;
+     width:100%;
+
+    margin:0;
+
+    left:0;
+
+    right:0;
+
+}
+
+.hero-date{
+    
+
+    font-size:0.5rem;
+
+    letter-spacing:2px;
+
+    margin-top:8px;
+
+
+
+}
+
+.open-btn{
+    background:#c997a4 !important;
+    color:#fff !important;
+    border:none !important;
+}
+.couple{
+
+    font-size:3.7rem;
+
+    line-height:1.15;
+
+}
+
+/* INVITATION */
+
+.ayah{
+
+    font-size:.88rem;
+
+    line-height:2;
+
+    max-width:320px;
+
+    margin:auto;
+
+}
+
+.opening-monogram{
+
+    width:95px;
+
+    display:block;
+
+    margin:0 auto 20px;
+
+}
+
+.invitation-text{
+
+    max-width:300px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.invitation-text p{
+
+    font-size:.88rem;
+
+    line-height:1.9;
+
+    margin-bottom:10px;
+
+}
+
+.opening-names{
+
+    font-size:1.8rem;
+
+    line-height:1.4;
+
+}
+
+/* CALENDAR */
+
+.calendar-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:nowrap;
+
+}
+
+.calendar-box{
+
+    width:210px;
+
+    padding:15px;
+
+    border-radius:20px;
+
+    flex-shrink:0;
+
+}
+
+.month{
+
+    font-size:18px;
+
+}
+
+.calendar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:4px;
+
+    justify-items:center;
+
+    align-items:center;
+
+}
+
+.calendar-grid span{
+
+    width:24px;
+
+    height:24px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:.72rem;
+
+}
+
+.date-info{
+
+    text-align:center;
+
+}
+
+.date-info h2{
+
+    font-size:18px;
+
+}
+
+.date-info h1{
+
+    font-size:48px;
+
+    line-height:1;
+
+}
+
+.date-info p{
+
+    font-size:14px;
+
+    margin-top:5px;
+
+}
+
+/* COUNTDOWN */
+
+.count-title{
+
+    font-family:"Amiri", serif;
+
+    font-size:2rem;
+
+    text-align:center;
+
+}
+
+.count-subtitle{
+
+    font-size:.62rem;
+
+}
+
+.countdown-container{
+
+   transform:scale(.78);
+
+    transform-origin:top center;
+
+}
+
+/* VENUE */
+
+.venue-title{
+
+     font-family:"Amiri", serif;
+
+    font-size:2rem;
+
+    text-align:center;
+
+}
+
+.venue-subtitle{
+
+    font-size:.72rem;
+
+    line-height:1.8;
+
+    max-width:270px;
+
+    margin:auto;
+
+}
+
+.venue-card{
+
+    width:220px;
+
+    padding:15px;
+
+    border-radius:18px;
+
+}
+
+.venue-card h3{
+
+    font-size:20px;
+
+}
+
+.venue-card p{
+
+    font-size:12px;
+    direction:ltr;
+
+text-align:center;
+
+}
+
+.venue-btn{
+
+    background:#c997a4;
+
+    color:#fff;
+
+    border:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:180px;
+
+    height:48px;
+
+    margin:auto;
+
+    border-radius:50px;
+    direction:ltr;
+
+text-align:center;
+
+justify-content:center;
+
+}
+
+.quote-section{
+
+    padding:40px 20px;
+
+}
+
+.quote-section p{
+
+    font-size:.88rem;
+
+    line-height:2;
+
+    max-width:300px;
+
+    margin:auto;
+
+}
+
+/* RSVP */
+
+.rsvp-container{
+
+    width:88%;
+
+    padding:22px;
+
+}
+
+.rsvp-poem{
+
+    margin:auto;
+
+    font-size:.72rem;
+
+    line-height:1.9;
+
+    max-width:260px;
+
+}
+
+.location-btn{
+   background:#c997a4;
+color:#fff;
+border:none;
+}
+.rsvp-btn{
+
+    background:#c997a4;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:50px;
+
+    transition:.3s ease;
+
+}
+
+}
+.petal{
+
+    position:absolute;
+
+    width:18px;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    animation:petalFall linear forwards;
+
+}
+
+@keyframes petalFall{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+        translate(0,-80px)
+        rotate(0deg);
+
+    }
+
+    10%{
+
+        opacity:.8;
+
+    }
+
+    25%{
+
+        transform:
+        translate(-25px,30vh)
+        rotate(120deg);
+
+    }
+
+    50%{
+
+        transform:
+        translate(20px,60vh)
+        rotate(260deg);
+
+    }
+
+    75%{
+
+        transform:
+        translate(-18px,95vh)
+        rotate(420deg);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+        translate(35px,140vh)
+        rotate(720deg);
+
+    }
+
+}
+.hero .date{
+
+    font-size:.65rem !important;
+
+    letter-spacing:2px !important;
+
+    margin-top:8px !important;
+
+}
+html,
+body{
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow-x:hidden !important;
+
+}
+.hero{
+
+    height:100svh;
+
+    min-height:100svh;
+
+    margin:0;
+
+    padding:0;
+
+}
+.invitation{
+
+    margin-top:0 !important;
+
+    padding-top:50px;
+
+}
+@media(max-width:768px){
+
+.time-box{
+
+    width:60px !important;
+
+    height:75px !important;
+
+    padding:8px !important;
+
+    border-radius:12px;
+
+}
+
+.time-box h1{
+
+    font-size:1.6rem !important;
+
+    line-height:1;
+
+}
+
+.time-box p{
+
+    font-size:.65rem !important;
+
+    margin-top:6px;
+
+}
+
+}
+body{
+
+    overflow-x:hidden;
+
+}
+
+.invitation{
+
+    overflow:hidden;
+
+}
